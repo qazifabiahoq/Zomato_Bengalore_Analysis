@@ -37,4 +37,6 @@ Capturing dynamic ratings over time.
 Data collected from: https://www.kaggle.com/code/manzoormahmood/analysis-of-zomato-restaurants-in-bangalore
 Udemy Course where i took help from: https://www.udemy.com/course/data-analytics-projects-python/
 
-SQL data is also uploaded along with geospatial maps. 
+The folder pics will show geospatial maps of highest concentration of South Indian and North Indian Restaurants food.
+
+Feel free to download the analysis.
