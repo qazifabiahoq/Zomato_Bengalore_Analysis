@@ -1,42 +1,101 @@
-Zomato Restaurants in Bangalore: In-Depth Analysis
-Introduction:
-This analysis explores the dataset of Zomato restaurants in Bangalore, sourced from Kaggle and utilized as part of the Udemy course "Data Analytics: Real World Project in Python." The dataset includes crucial information such as location, ratings, cuisine types, user reviews, etc.
 
-Problem Statements:
 
-Relation Between Online Orders and Restaurant Ratings:
+# Zomato Restaurants in Bangalore: In-Depth Analysis
 
-Investigated the correlation between online orders and restaurant ratings.
-Found that restaurants with ratings above 4, accepting online orders, tend to receive higher ratings.
-Text Analysis of Customer Reviews for Quick Bites Restaurants:
+## Objective
 
-Conducted text analysis on customer reviews for Quick Bites restaurants.
-Discovered the importance of words like "place," "food," "good," "chicken," and "taste."
-Unigram, Bigram, and Trigram Analysis:
+This project explores the dining landscape of Bangalore using Zomato data, aiming to uncover trends in online ordering behavior, customer sentiment, and cuisine preferences. The objective is to generate insights that support entrepreneurs, food service strategists, and urban planners in making data-informed decisions.
 
-Explored unigram, bigram, and trigram analyses of tokenized reviews.
-Identified top unigrams and bigrams, providing insights into customer preferences.
-Geospatial Analysis of North Indian Restaurants:
+### Who Will Benefit and Why?
 
-Identified locations with the highest concentration of North Indian restaurants.
-Central Bangalore emerged as a hotspot for restaurant establishments.
-Automation for Different Cuisines:
+* **Restaurant Owners** can learn where to set up shop and what customers value in dining experiences.
+* **Food Entrepreneurs** can discover what cuisines are in demand and where.
+* **Marketers** can use review sentiment and keyword patterns for targeted messaging.
+* **Urban Planners & Investors** gain clarity on food density and location strategy.
 
-Developed a function automating heatmap generation for various cuisines.
-Provided entrepreneurs with insights for strategic decision-making.
-Conclusion:
-This analysis offers a deep understanding of Zomato restaurants in Bangalore, unraveling patterns related to ratings, customer reviews, and geographical concentrations.
+---
 
-Limitations and Suggestions for Enhancement:
+## Dataset Overview
 
-Addressing missing data.
-Introducing a temporal dimension for trend analysis.
-Enriching the analysis with user demographics.
-Capturing dynamic ratings over time.
+Sourced from [Kaggle](https://www.kaggle.com/code/manzoormahmood/analysis-of-zomato-restaurants-in-bangalore), this dataset contains information about restaurants in Bangalore, including:
 
-Data collected from: https://www.kaggle.com/code/manzoormahmood/analysis-of-zomato-restaurants-in-bangalore
-Udemy Course where i took help from: https://www.udemy.com/course/data-analytics-projects-python/
+* **Restaurant Name**
+* **Location and Area**
+* **Online Order Availability**
+* **Rating**
+* **Cuisine Types**
+* **Customer Reviews**
 
-The folder pics will show geospatial maps of highest concentration of South Indian and North Indian Restaurants food.
+The project was guided by the Udemy course:
+[Data Analytics: Real World Project in Python](https://www.udemy.com/course/data-analytics-projects-python/)
 
-Feel free to download the analysis.
+---
+
+## Methodology
+
+* **Tools Used**: Python, Pandas, Matplotlib, Seaborn, NLP (Natural Language Processing), Folium
+* **Preprocessing**: Cleaned missing values, categorized cuisine types, and tokenized text for sentiment analysis
+* **Key Analyses Conducted**:
+
+  * Correlation between **online ordering** and **ratings**
+  * **Text mining** of customer reviews
+  * **N-gram analysis** (Unigram, Bigram, Trigram)
+  * **Geospatial mapping** of cuisine clusters
+  * **Function-based automation** for cuisine-specific heatmaps
+
+---
+
+## 🔍 Key Findings
+
+### 🍽️ Does Online Ordering Lead to Higher Ratings?
+
+Yes. Restaurants that **accept online orders** and have a rating above **4.0** tend to receive **higher average ratings**. This suggests that digital convenience directly enhances customer satisfaction.
+
+### 💬 What Do Customers Talk About Most?
+
+Text analysis of **Quick Bites** restaurant reviews shows frequent mentions of:
+
+* **“Place”**, **“Food”**, **“Good”**, **“Chicken”**, and **“Taste”**
+  These keywords highlight that **ambience and flavor** are key factors in customer experiences.
+
+### 🧠 What Phrases Keep Reappearing?
+
+* **Top Unigrams**: food, place, good
+* **Top Bigrams**: good food, nice place
+* **Top Trigrams**: good place food
+  This reveals that **concise and consistent language** in reviews aligns with customer satisfaction and reinforces branding strategies.
+
+### 📍 Where Are Most North Indian Restaurants Located?
+
+The highest concentration of **North Indian restaurants** is in **Central Bangalore**, making it a hot zone for that cuisine. This can guide expansion strategies for similar food offerings.
+
+### 🔄 Can This Analysis Be Applied to Other Cuisines?
+
+Yes. A **custom function** was created to automate heatmap generation by cuisine type—allowing **scalable exploration** across South Indian, Chinese, Italian, and more.
+
+---
+
+## 🧾 Conclusion
+
+The project uncovers a rich narrative of Bangalore's dining scene. Higher ratings are tied to online accessibility, customer reviews highlight what matters most, and certain cuisines dominate specific geographic clusters. This analysis supports both micro (restaurant-level) and macro (city-level) decision-making.
+
+---
+
+## 💡 Recommendations
+
+* Emphasize **online ordering options** to attract more favorable reviews.
+* Use **keyword insights** to shape promotional content and menu descriptions.
+* Consider **location-based expansion** in Central Bangalore for North Indian and Quick Bites-style outlets.
+* Apply the **automated heatmap tool** to evaluate new cuisine trends in other city zones.
+
+---
+
+## 📂 Project Source & Attribution
+
+* **Dataset**: [Kaggle - Zomato Bangalore](https://www.kaggle.com/code/manzoormahmood/analysis-of-zomato-restaurants-in-bangalore)
+* **Course Reference**: [Udemy - Data Analytics: Real World Project in Python](https://www.udemy.com/course/data-analytics-projects-python/)
+
+The `pics` folder contains **geospatial maps** for North Indian and South Indian restaurant concentrations. Feel free to explore or download the findings.
+
+---
+
